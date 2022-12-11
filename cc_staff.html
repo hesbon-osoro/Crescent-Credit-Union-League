@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+    Tutorial 14
+    Case Problem 2
+    
+    Crescent Credit Union League Staff Directory
+    Author: Hesbon Osoro
+    Date: 12/11/22   
+
+    Filename: cc_staff.html
+   -->
+
+    <title>Crescent Credit Union League Staff Directory</title>
+    <meta charset="utf-8" />
+    <link href="cc_base.css" rel="stylesheet" />
+    <link href="cc_layout.css" rel="stylesheet" />
+    <script src="cc_data.js" async></script>
+    <script src="cc_staff.js" async></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="horizontal">
+        <ul>
+          <li><a href="#">Advocacy</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </nav>
+      <img src="cc_logo.png" alt="Crescent Credit Union League" id="logoImg" />
+    </header>
+
+    <section>
+      <h1>Staff Directory</h1>
+
+      <form name="staffSearch" id="staffSearch">
+        <fieldset id="searchTerms" name="searchTerms">
+          <label for="nameSearch">Last Name</label>
+          <input type="text" id="nameSearch" name="nameSearch" value="" />
+          <select id="nameSearchType" name="nameSearchType">
+            <option value="contains">Contains</option>
+            <option value="beginsWith">Begins With</option>
+            <option value="exact">Exact Match</option>
+          </select>
+          <label for="deptSearch">Department</label>
+          <select id="deptSearch" name="deptSearch">
+            <option value=""></option>
+            <option value="Administrative">Administrative</option>
+            <option value="Advocacy">Advocacy</option>
+            <option value="Audit Services">Audit Services</option>
+            <option value="Business Development">Business Development</option>
+            <option value="Compliance">Compliance</option>
+            <option value="Cooperative Initiatives">
+              Cooperative Initiatives
+            </option>
+            <option value="Corporate Accounting">Corporate Accounting</option>
+            <option value="Credit Union Resources">
+              Credit Union Resources
+            </option>
+            <option value="CU Accounting Services">
+              CU Accounting Services
+            </option>
+            <option value="Executive">Executive</option>
+            <option value="Human Resources">Human Resources</option>
+            <option value="IT Services">IT Services</option>
+            <option value="Professional Development">
+              Professional Development
+            </option>
+            <option value="PR and Communications">PR and Communications</option>
+          </select>
+          <label for="positionSearch">Position</label>
+          <input
+            type="text"
+            id="positionSearch"
+            name="positionSearch"
+            value=""
+          />
+          <select id="positionSearchType" name="positionSearchType">
+            <option value="contains">Contains</option>
+            <option value="beginsWith">Begins With</option>
+            <option value="exact">Exact Match</option>
+          </select>
+          <input type="button" value="search" alt="search" id="searchButton" />
+        </fieldset>
+      </form>
+
+      <table id="staffTable">
+        <caption>
+          0 records found
+        </caption>
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Position</th>
+            <th>E-Mail</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <footer>
+      <nav>
+        <div>
+          <h2>Advocacy</h2>
+          <ul>
+            <li><a href="#">Grass Roots Action</a></li>
+            <li><a href="#">Federal Issues</a></li>
+            <li><a href="#">Research &amp; Resources</a></li>
+            <li><a href="#">Regulatory Report</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Advocacy Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Compliance</h2>
+          <ul>
+            <li><a href="#">Deadlines &amp; Policies</a></li>
+            <li><a href="#">Regulatory Deadlines</a></li>
+            <li><a href="#">Compliance FAQ</a></li>
+            <li><a href="#">Fraud &amp; Risk Resources</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Compliance Group</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Development</h2>
+          <ul>
+            <li><a href="#">Annual Meeting</a></li>
+            <li><a href="#">Leadership Institute</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">Certification</a></li>
+            <li><a href="#">CCUL Magazine</a></li>
+            <li><a href="#">Call Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Community</h2>
+          <ul>
+            <li><a href="#">Chapters</a></li>
+            <li><a href="#">Asset Groups</a></li>
+            <li><a href="#">CCUL History</a></li>
+            <li><a href="#">Membership Info</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Board of Directors</a></li>
+          </ul>
+        </div>
+        <div>
+          <img src="cc_icon.png" alt="" />
+        </div>
+      </nav>
+
+      <p>Crescent Credit Union League &copy; 2018 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

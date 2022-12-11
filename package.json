@@ -1,0 +1,14 @@
+{
+  "name": "crescent-credit-union-league",
+  "version": "1.0.0",
+  "description": "T14 Case Problem 2",
+  "main": "index.html",
+  "license": "MIT",
+  "author": "Hesbon Osoro <hesbonosoro1@gmail.com>",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}

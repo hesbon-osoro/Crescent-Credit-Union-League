@@ -1,0 +1,272 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+   Tutorial 14
+   Case Problem 2
+   
+
+   Crescent Credit Union League Layout Style Sheet
+
+   Filename: ah_layout.css
+   
+*/
+
+/* HTML and Body Styles */
+
+html {
+  background: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  color: rgb(101, 101, 101);
+}
+
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background: white;
+  max-width: 1024px;
+  min-width: 620px;
+  margin: 0px auto;
+}
+
+/* Header Styles */
+
+header {
+  border-bottom: 1px solid rgb(41, 170, 226);
+}
+
+body > header {
+  width: 100%;
+}
+
+img#logoImg {
+  display: block;
+  width: 100%;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontal ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgb(91, 151, 213);
+  height: 40px;
+}
+
+nav.horizontal ul li {
+  -webkit-flex: 0 1 80px;
+  flex: 0 1 80px;
+  margin: 10px;
+}
+
+nav.horizontal ul li a {
+  color: rgb(74, 50, 6);
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 50% 0%;
+  text-transform: uppercase;
+}
+
+nav.horizontal ul li a:hover,
+nav.horizontal ul li a:active {
+  color: rgb(211, 211, 211);
+  text-shadow: 0px 0px 2px black, 0px 0px 8px black;
+}
+
+/* Search Styles */
+
+h1 {
+  font-size: 3.3em;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+  margin: 10px 0px 40px 60px;
+  letter-spacing: 0.1em;
+}
+
+form#staffSearch fieldset {
+  padding-top: 15px;
+  width: 60%;
+  margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgb(51, 51, 51), inset 0px 0px 20px rgb(51, 51, 51);
+}
+
+form#staffSearch label {
+  width: 140px;
+  display: block;
+  float: left;
+  clear: left;
+  margin: 10px 20px 10px 20px;
+}
+
+form#staffSearch input[type="text"] {
+  color: rgb(101, 101, 101);
+  width: 140px;
+  display: block;
+  float: left;
+  margin: 10px 20px 0px 0px;
+  height: 20px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+form#staffSearch input[type="text"]:focus {
+  background-color: rgb(255, 231, 213);
+}
+
+form#staffSearch select {
+  color: rgb(101, 101, 101);
+  width: 140px;
+  display: block;
+  float: left;
+  margin: 10px 0px 0px 0px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+form#staffSearch input#searchButton {
+  font-size: 1.2em;
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin: 25px auto 30px;
+  position: relative;
+  top: 15px;
+  clear: left;
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0px 0px 3px rgb(51, 51, 51), inset 0px 0px 20px rgb(51, 51, 51);
+}
+
+form#staffSearch input#searchButton:hover {
+  background-color: rgba(228, 114, 35, 0.5);
+}
+
+/* Section Styles */
+
+section {
+  padding: 20px;
+  width: 100%;
+}
+
+/* Table Styles */
+
+table#staffTable {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  font-size: 0.8em;
+}
+
+table#staffTable caption {
+  caption-side: top;
+  text-align: left;
+  text-indent: 30px;
+  background-color: rgb(231, 231, 231);
+  font-style: italic;
+  height: 30px;
+  line-height: 30px;
+}
+
+table#staffTable img {
+  width: 60px;
+}
+
+table#staffTable tbody tr:nth-of-type(even) td {
+  background-color: rgb(255, 231, 213);
+}
+
+table#staffTable thead th {
+  height: 20px;
+  font-size: 1.3em;
+  background-color: rgb(91, 151, 213);
+  vertical-align: middle;
+  color: rgb(255, 231, 213);
+  text-shadow: 0px 0px 1px rgb(51, 51, 51);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+td,
+th {
+  vertical-align: top;
+  border: 1px solid rgb(191, 191, 191);
+  font-weight: normal;
+  height: 30px;
+  padding: 5px;
+}
+
+/* Footer Styles */
+
+footer {
+  width: 100%;
+}
+
+/* Vertical Navigation Styles */
+
+footer nav {
+  background-color: rgba(228, 114, 35, 0.5);
+  padding: 10px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+footer nav div {
+  -webkit-flex: 1 1 0;
+  flex: 1 1 0;
+  margin: 0px;
+}
+
+footer nav div:last-of-type {
+  -webkit-flex: 0 0 100px;
+  flex: 0 0 100px;
+  width: 100px;
+}
+
+footer nav div:last-of-type img {
+  width: 70%;
+  display: block;
+  margin: 0px auto;
+}
+
+footer nav div h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+footer nav ul li {
+  line-height: 1.4em;
+}
+
+footer nav ul li a {
+  color: rgb(101, 101, 101);
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: rgb(211, 211, 211);
+  font-size: 0.9em;
+  text-align: center;
+  background-color: rgb(0, 113, 187);
+  margin: 0px;
+  padding: 10px 0px;
+}

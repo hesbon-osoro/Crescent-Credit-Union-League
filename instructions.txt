@@ -1,0 +1,33 @@
+/* SUMMARY
+Crescent Credit Union League Richard Coates is the IT manager at the Crescent Credit Union League (CCUL), an advocacy group for credit unions providing a political voice for credit unions and offering education and training for CCUL members. Richard wants you to work on the CCUL’s staff directory page for its website. He wants users to be able to search the directory, retrieving contact information for specific employees at CCUL.
+
+The staff directory is stored in an object literal named "staff" that contains a single object named "directory". The directory object contains an array of objects that displays each employee's id, first and last name, position, department, e-mail address, phone number, and image file.
+
+Your job is to create a search tool that searches the staff object directory array for employees whose last name, position, and/or department matches the user's search conditions. 
+   */
+  /*
+  TASK
+  Create the nameSearch variable equal to the value entered in the nameSearch input box.
+  
+  Users can search for names in three ways:
+  
+  Matching an employee's last name if it contains the text string specified in nameSearch
+  Matching an employee's last name if it begins with the nameSearch text string
+  Matching an employee's last name only if it exactly matches the nameSearch text string.
+  Richard has supplied you with code to add the selectedValue() method to the prototype of the HTMLSelectElement object class in order to return the value of the selected option in any selection list. Apply the selectedValue() method to the nameSearchType selection list to return the option selected by the user, storing the value in the nameSearchType variable.
+  
+  Create a switch-case structure for the following possible values of the nameSearchType variable:
+  
+  If nameSearchType equals "contains", use the new RegExp() constructor to create a regular expression object named nameRegExp containing the regular expression nameSearch where nameSearch is the value of the nameSearch variable. Include the "i" flag with the regular expression object so that the regular expression matches lower or uppercase characters.
+  If nameSearchType equals "beginsWith", set nameRegExp object to the regular expression ^nameSearch, once again with the "i" flag.
+  If nameSearchType equals "exact", set nameRegExp object to the regular expression ^nameSearch$ with the "i" flag to allow for upper- and lower-case matches.
+  Using nameRegExp as the regular expression, apply the test() method to the record.Lastname property (the last name stored in the employee record currently being examined in the forEach() loop). Store the results of the test() method in the foundName variable.
+  
+  Repeat the previous instructions in this step (starting with the Create the nameSearch... instruction and ending with the Using nameRegExp... instruction) to determine whether the employee's position property matches the value entered into the positionSearch input box on the web form. Store the value of the positionSearch input box in the positionSearch variable, the type of search in the positionSearchType variable, the regular expression in the positionRegExp variable, and the result of the regular expression test in the foundPosition variable.
+  
+  The final search condition in the web form allows the user to specify the employee's department. Users can leave the department blank (to match any department) or they can specify the department from the deptSearch selection list.
+  
+  Apply the selectedValue() method that Richard created for select elements to the deptSearch selection list to retrieve the department value selected by the user, storing the value in the deptSearch variable. If deptSearch equals "" or the value of record.dept (the value of the dept property for the current employee record currently being examined in the forEach() loop), store the Boolean value true in the deptFound variable.
+  
+  For an employee record to be displayed in the staff table, it must match the search condition set by the user. Insert an if statement that tests whether foundName, foundPosition, and foundDept are all true. If so, use the push() method to add a new employee object to the employees array in the searchResult object. (Hint: use record.id, record.firstName, record.lastName, and so on as the parameter values in the new employee() statement.) 
+  */
